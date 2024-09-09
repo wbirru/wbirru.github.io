@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Emanuel Birru personal webpage">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src='static/js/appBubbleScript.js'></script>
+    <script src='static/js/quoteChange.js'></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <link rel="stylesheet" href='static/css/indexStyle.css'>
+    <link rel="icon" href='static/img/websiteIcon.png'>
+
+    <title>Emanuel Birru</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="myNavbar">
+            <div class="name">\(\Large{ \braket{E|B} }\)</div>
+            <a class="ham-menu">
+                <span class="bar" id="bar1"></span>
+                <span class="bar" id="bar2"></span>
+                <span class="bar" id="bar3"></span>
+            </a>
+            <div class="navButtons">
+                <ul class="button-list">
+                    <li class="navBar-li" id="home"><a href="#homePage">Home</a></li>
+                    <li class="navBar-li" id="about"><a href="#aboutPage">About</a></li>
+                    <li class="navBar-li" id="research"><a href="#researchPage">Research</a></li>
+                    <li class="navBar-li" id="work">
+                        <a>Work</a>
+                        <ul class="menu">
+                            <li onclick="window.open('https://github.com/emanuelbirru')"><i class="fab fa-github"></i> GitHub</li>
+                            <li onclick="window.open('https://www.linkedin.com/in/emanuel-birru')"><i class="fab fa-linkedin-in"></i> LinkedIn</li>
+                            <li onclick="window.open('https://scholar.google.com/citations?user=Z_LZqDYAAAAJ&hl=en')"><img src='static/img/google.png'> Google Scholar</li>
+                        </ul>
+                    </li>
+                    <li class="navBar-li" id="pdfs">
+                        <a>PDFs</a>
+                        <ul class="menu">
+                            <li onclick="window.open('static/Math_Reference_Sheet.pdf')">Math</li>
+                            <li onclick="window.open('static/Matlab_Reference_Sheet.pdf')">Matlab</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="particles-js"></div>
+
+    <!-- Page 1: Home -->
+    <div id="homePage">
+        <div id="floatingQuote">
+            <img id="headshot" src='static/img/me.png' alt="headshot">
+            <p>Emanuel Birru</p>
+            <p>AI/ML Software Engineer | Data Scientist</p>
+            <p id="sagan">"Somewhere, something incredible is waiting to be known."</p>
+            <img src='static/img/planet.png' alt="space">
+        </div>
+    </div>
+
+    <!-- Page 2: About -->
+    <div id="aboutPage">
+        <div class="bio">
+            <b>Experience</b><br>
+            I work full-time as a software engineer, specializing in AI and ML...
+            <br><br><b>Education</b><br>
+            B.S. in Computer Science, PhD in Drug Delivery Science...
+        </div>
+    </div>
+
+    <!-- Page 3: Research -->
+    <div id="researchPage">
+        <div class="bio">
+            <u>Research Areas & Interests:</u><br>
+            <img src='static/img/mlIcon.png' alt="ml"> Machine Learning
+            <br><br><img src='static/img/qubitIcon.png' alt="qc"> Quantum Computing
+        </div>
+    </div>
+</body>
+
+</html>
